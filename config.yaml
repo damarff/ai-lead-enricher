@@ -1,0 +1,14 @@
+llm:
+  endpoint: "https://api.openai.com/v1"  # OpenAI-compatible
+  model: "gpt-4o-mini"
+  api_key: "${LLM_API_KEY}"  # env var or direct string
+  temperature: 0.1
+
+scraping:
+  delay_between_requests: 1.5  # seconds
+  max_sources_per_company: 3
+  timeout: 15  # seconds
+
+output:
+  format: "csv"
+  include_raw_text: false  # set true for debugging
